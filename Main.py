@@ -12,6 +12,7 @@ if total > 50000:
 
 print("Total bayar:", total)
 
+
 bayar = int(input("Uang cash: "))
 
 if bayar >= total:
