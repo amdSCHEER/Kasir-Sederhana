@@ -7,6 +7,11 @@ total = harga * jumlah
 print("Total bayar:", total)
 
 bayar = int(input("Uang cash: "))
-kembalian = bayar - total
 
-print("Kembalian anda:", kembalian)
+# Mengedit bagian ini agar bisa cek uang kurang
+if bayar >= total:
+    kembalian = bayar - total
+    print("Kembalian anda:", kembalian)
+else:
+    kurang = total - bayar
+    print("Uang anda kurang sebesar:", kurang)
